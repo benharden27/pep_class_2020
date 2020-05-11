@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on PEP 2020</title>
+    <link>/class/</link>
+    <description>Recent content in Classes on PEP 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© PEP 2020</copyright>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/class/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zooplankton</title>
+      <link>/class/05-zooplankton/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/05-zooplankton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Primary Production</title>
+      <link>/class/04-primary_production/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/04-primary_production/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chemical Oceanography</title>
+      <link>/class/03-chemical_oceanography/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/03-chemical_oceanography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Temperature, Salinity and Density</title>
+      <link>/class/02-physical_oceanography/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/02-physical_oceanography/</guid>
+      <description>Temperature, Salinity and Density Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
+Individual Work Prep-work Read the following from Segar:
+ Chapter 1: Introduction (pg.</description>
+    </item>
+    
+  </channel>
+</rss>
