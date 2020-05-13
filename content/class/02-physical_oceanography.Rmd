@@ -1,15 +1,17 @@
 ---
 title: Temperature, Salinity and Density
 date: 2020-06-01
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
 ---
-
-# Temperature, Salinity and Density
 
 Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
 
-## Individual Work
+# Individual Work
 
-### Prep-work
+## Prep-work
 
 Read the following from [Segar](https://www.reefimages.com/oceansci.php):
 
@@ -24,12 +26,12 @@ How we measure (to come)
 <p><a href="https://vimeo.com/46944329">Atlantic Circulation</a> from <a href="https://vimeo.com/user4704878">Ben Harden</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
-### Test Yourself
+## Test Yourself
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelBRSGPUGy_TjARmIzqvIf3-pV3C9KaTGXxxZL2OFC9l5lLA/viewform?embedded=true" width="640" height="462" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
-### Exercise
+## Exercise
 
 #Q1: How does temperature and salinity vary accross the surface ocean?
 
@@ -76,8 +78,8 @@ The evaporation curve is similar to the incoming radiation curve - more heating 
 > How does this pattern help us understand the general trends in sea surface salinity seen above?
 ## Team Work
 
-## Group Meeting
+# Group Meeting
 
-## Class
+# Class
 
-## Reflection
+# Reflection
