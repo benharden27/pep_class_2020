@@ -32,19 +32,9 @@ disqusShortname = "ink-demo"
 
 # Nav.
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
 name = "About"
 url = "/intro"
-weight = 3
+weight = 1
 
 [[menu.main]]
 name = "Class"
@@ -52,8 +42,8 @@ url = "/class"
 weight = 3
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "Career Development"
+url = "/careers"
 weight = 4
 
 #[[params.social]]
