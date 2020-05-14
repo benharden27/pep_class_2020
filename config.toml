@@ -18,7 +18,7 @@ disqusShortname = "ink-demo"
 	subtitle = "Class and Career Development"
 
 	# Optional 64x64 avatar image.
-	avatar = "images/dac-logo-white278x80.png"
+	avatar = "/images/dac-logo-white278x80.png"
 
 	# Content types to disable Disqus on.
 	disableDisqusTypes = ["page"]

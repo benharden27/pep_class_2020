@@ -9,7 +9,8 @@
 In this class, we will begin plotting data using ggplot. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas. We’re going to be using this tool to experiment with visualizing data from a SEA Semester cruise across the South Pacific undertaken in 2014 (S258). We’re going to be using a subset of the neuston net data (surface tow) from that cruise.">
 
 
-
+<meta itemprop="datePublished" content="2020-06-07T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-07T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="3479">
 
 
@@ -20,7 +21,8 @@ In this class, we will begin plotting data using ggplot. ggplot is a powerful to
 In this class, we will begin plotting data using ggplot. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas. We’re going to be using this tool to experiment with visualizing data from a SEA Semester cruise across the South Pacific undertaken in 2014 (S258). We’re going to be using a subset of the neuston net data (surface tow) from that cruise." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/class/r/r_plotting1/" />
-
+<meta property="article:published_time" content="2020-06-07T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-06-07T00:00:00&#43;00:00"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Plotting I - Initial Tools"/>
 <meta name="twitter:description" content="Data for this exercise can be found here.
@@ -43,7 +45,7 @@ In this class, we will begin plotting data using ggplot. ggplot is a powerful to
 	
 		<div class="avatar">
 			<a href="/">
-				<img src="images/dac-logo-white278x80.png" alt="PEP 2020" />
+				<img src="/images/dac-logo-white278x80.png" alt="PEP 2020" />
 			</a>
 		</div>
 	
@@ -74,6 +76,13 @@ In this class, we will begin plotting data using ggplot. ggplot is a powerful to
 
 		<div class="post">
 			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">07</span>
+							<span class="rest">Jun 2020</span>
+						</div>
+					</div>
 				
 				<div class="matter">
 					<h1 class="title">Plotting I - Initial Tools</h1>
@@ -142,7 +151,7 @@ library(readr)</code></pre>
 <p>The data has been imported into a <strong>data frame</strong> in R. Side note: Technically we’re working with a tidyverse “tibble”, but its built on the base R data frame, so let’s not get bogged down in details at this point. I’ll refer to them as data frames throughout.</p>
 <p>Data frames are the most common way of organizing data in R and the form that ggplot requires for making plots. It’s very similar to how Excel organizes data in rows and columns and, like Excel, there are a number of ways people choose to organize their data in this format. However, ggplot (and other tidyverse packages) focus on using “tidy” data: Each observation has a row and each variable is organized into a column.</p>
 <div class="figure"><span id="fig:unnamed-chunk-3"></span>
-<img src="images/tidy_1.png" alt="Visualization of how values are organized in a data frame (reproduced from R for Data Science)" width="100%" />
+<img src="../../../static/images/tidy_1.png" alt="Visualization of how values are organized in a data frame (reproduced from R for Data Science)" width="100%" />
 <p class="caption">
 Figure 1: Visualization of how values are organized in a data frame (reproduced from R for Data Science)
 </p>
@@ -465,7 +474,7 @@ ggplot() +
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">
-		<div>1  © PEP 2020 |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+		<div>2020  © PEP 2020 |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
 </div>
 

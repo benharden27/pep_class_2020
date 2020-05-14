@@ -1,5 +1,6 @@
 ---
 title: Plotting I - Initial Tools
+date: 2020-06-07
 weight: 3
 ---
 
@@ -61,7 +62,7 @@ The data has been imported into a **data frame** in R. Side note: Technically we
 Data frames are the most common way of organizing data in R and the form that ggplot requires for making plots. It's very similar to how Excel organizes data in rows and columns and, like Excel, there are a number of ways people choose to organize their data in this format. However, ggplot (and other tidyverse packages) focus on using "tidy" data: Each observation has a row and each variable is organized into a column.
 
 ```{r, fig.cap="Visualization of how values are organized in a data frame (reproduced from R for Data Science)", out.width = '100%', echo=FALSE}
-knitr::include_graphics("images/tidy_1.png")
+knitr::include_graphics("../../../static/images/tidy_1.png")
 ```
 
 Lets have a look at the data we have just read in. You can either just type the name of the data frame into the console:
