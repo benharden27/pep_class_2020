@@ -3,9 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/class/r/r_plotting1/</loc>
+  </url>
+  
+  <url>
     <loc>/class/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/class/r/r_getting_started/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,22 +23,22 @@
   </url>
   
   <url>
-    <loc>/class/05-zooplankton/</loc>
+    <loc>/class/content/content_zooplankton/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/04-primary_production/</loc>
+    <loc>/class/content/content_primary_production/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/03-chemical_oceanography/</loc>
+    <loc>/class/content/content_chemical_oceanography/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/02-physical_oceanography/</loc>
+    <loc>/class/content/content_physical_oceanography/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   

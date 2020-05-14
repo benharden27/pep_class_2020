@@ -13,39 +13,62 @@
     
     
     <item>
-      <title>Zooplankton</title>
-      <link>/class/05-zooplankton/</link>
+      <title>Plotting I - Initial Tools</title>
+      <link>/class/r/r_plotting1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/class/r/r_plotting1/</guid>
+      <description>Data for this exercise can be found here.
+In this class, we will begin plotting data using ggplot. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas. We’re going to be using this tool to experiment with visualizing data from a SEA Semester cruise across the South Pacific undertaken in 2014 (S258). We’re going to be using a subset of the neuston net data (surface tow) from that cruise.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started in R</title>
+      <link>/class/r/r_getting_started/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/class/05-zooplankton/</guid>
+      <guid>/class/r/r_getting_started/</guid>
+      <description>Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop:
+https://robwschlegel.github.io/Intro_R_Workshop/prelim.html#why-use-r
+Dan Kelley (Dalhousie) has a nice book on oceanographic analysis in R (in classroom) - his sub-chapter on “Why R, and Why Now?” is a quick read and is on GC as a pdf.</description>
+    </item>
+    
+    <item>
+      <title>Zooplankton</title>
+      <link>/class/content/content_zooplankton/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/content/content_zooplankton/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Primary Production</title>
-      <link>/class/04-primary_production/</link>
+      <link>/class/content/content_primary_production/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/class/04-primary_production/</guid>
+      <guid>/class/content/content_primary_production/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chemical Oceanography</title>
-      <link>/class/03-chemical_oceanography/</link>
+      <link>/class/content/content_chemical_oceanography/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/class/03-chemical_oceanography/</guid>
+      <guid>/class/content/content_chemical_oceanography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Temperature, Salinity and Density</title>
-      <link>/class/02-physical_oceanography/</link>
+      <link>/class/content/content_physical_oceanography/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/class/02-physical_oceanography/</guid>
-      <description>1 Individual Work 1.1 Prep-work 1.2 Test Yourself 1.3 Exercise  2 Group Meeting 3 Class 4 Reflection   Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.</description>
+      <guid>/class/content/content_physical_oceanography/</guid>
+      <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
+1 Individual Work 1.1 Reading Read the following from Segar:
+ Chapter 1: Introduction (pg.</description>
     </item>
     
   </channel>
