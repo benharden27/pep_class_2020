@@ -43,7 +43,7 @@ weight = 3
 
 [[menu.main]]
 name = "Career Development"
-url = "/careers"
+url = "/career"
 weight = 4
 
 #[[params.social]]
