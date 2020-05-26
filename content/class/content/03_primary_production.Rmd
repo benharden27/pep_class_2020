@@ -1,0 +1,62 @@
+---
+title: Phytoplankton and Nutrients
+date: 2020-06-03
+---
+
+# Reading
+
+* Watch this accessible into to phytoplankton:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fS422O4SLc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Read the following from [Segar](https://www.reefimages.com/oceansci.php):
+      * [Chapter 12](https://www.reefimages.com/oceans/SegarOcean4Chap05.pdf): only pg 285 - 296.
+      * [Critical Concept](https://www.reefimages.com/oceans/SegarOcean4CritCon.pdf) 14, which covers light, nutrients and photosynthesis in the ocean.
+
+* Listen to this podcast about putting excess nitrogen into a local watershed
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/711745156&color=004781&hide_related=true&show_artwork=false&show_comments=false&show_teaser=false&show_user=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sea-semester" title="SEA Semester" target="_blank" style="color: #cccccc; text-decoration: none;">SEA Semester</a> · <a href="https://soundcloud.com/sea-semester/fixing-nitrogen" title="Fixing Nitrogen" target="_blank" style="color: #cccccc; text-decoration: none;">Fixing Nitrogen</a></div>
+
+# Test Yourself
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebi4w0twy_iIhVa8oPecRLxurGoOmovfCWnRzB17U8yMILUg/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+# Exercises
+
+## Vertical Distribution of Chlorophyll
+
+Below are typical vertical profiles of light and nutrients in the ocean.
+
+!(/images/light_nutrients.jpg)
+
+* Q: Describe the patterns that you see in each - why do they behave the way they do?
+* Q: Given that phytoplankton need both light and nutrients to grow, can you hyptothesize the vertical distribution of phytoplankton for these profiles?
+
+## Where are the phytoplankton?
+
+Below is a satellite map of surface chlorophyll
+
+![NASA](/images/surface_phyto.jpg)
+
+Yellows and reds indicate more chlorophyll and blues and purples less. This is the average amount recorded over many years of satellite observations.
+
+* Q: What patterns do you observe? Where is chlorophyll generally higher and lower?
+* Q: What suggestions do you have for these patterns?
+
+## HNLC
+
+The following is a map of surface nitrate concentrations.
+
+![](/images/limiting_nuts.jpg)
+
+Light blue colors are low nitrate concentrations, and green colors are high concentrations. Superimposed on the image are circles for where researchers went to sample the ocean. At each point they took a sample of seawater and added different nutrients to see which would make the phytoplankton grow quickest. This is a way to determine which nutrient is currently in shortest supply relative to what the plankton need.  This is known as the __limiting nutrient__, a nutrient which limits te growth of phytoplankton even if others are in high-supply.
+
+There are typically two limiting nutrients in the ocean - Nitrogen (in the form of Nitrate NO_3^2^-) and Iron. The locations where phytoplankton are iron limited are shown with red dots and those that are nitrogen limited are shown with green dots.
+
+* Q: How do the distribution of red and green dots map to the underlying distribution of nitrate? Does this make sense?
+
+Much of the iron in the ocean comes from depisiton from winds blown over desserts. Below is a map of average dust deposition across the whole planet.
+
+![](/images/iron_deposition.jpg)
+
+* Q: Which parts of the nutrient-limited map can be explained due to the lack of proximity to land sources of iron? Which can't and why?
