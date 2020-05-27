@@ -15,10 +15,10 @@
     <item>
       <title>Data descovery and initial plotting</title>
       <link>/class/r/02_plotting1/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/r/02_plotting1/</guid>
-      <description>Individual Work Reading You should read Sections 3.1 to 3.6 (and skim the rest) of Chapter 3 of R for Data Science by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind ggplot and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</description>
+      <description>Reading You should read Sections 3.1 to 3.6 (and skim the rest) of Chapter 3 of R for Data Science by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind ggplot and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</description>
     </item>
     
     <item>
@@ -33,33 +33,23 @@ The following video came from a cruise in the North Atlantic in 2012.
     </item>
     
     <item>
+      <title>Zooplankton</title>
+      <link>/class/content/04_zooplankton/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/content/04_zooplankton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Carbon and Oxygen</title>
       <link>/class/content/02_chemical_oceanography/</link>
       <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/02_chemical_oceanography/</guid>
       <description>Chemical Oceanography is concerned with the the study of the interaction of dissolved ions, molecules, gasses in the ocean. This is a diverse field and we will be covering the basics of macronutrients, oxygen and carbon in this class. This will be a necessarily broad overview.
-Reading Read the following from Segar:
+1 Reading Read the following from Segar:
  Chapter 5:  The Dissolving Power of Water (pg. 94-95) Sources and Sinks of Chemicals Dissolved in Seawater (pg.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started in R</title>
-      <link>/class/r/01_getting_started/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/class/r/01_getting_started/</guid>
-      <description>Our goal in this class is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
-Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop.</description>
-    </item>
-    
-    <item>
-      <title>Zooplankton</title>
-      <link>/class/content/04_zooplankton/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/class/content/04_zooplankton/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -68,9 +58,7 @@ Why R? Perhaps the best place to start is to ask ourselves why we are choosing t
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/03_primary_production/</guid>
-      <description>Reading  Watch this accessible into to phytoplankton:    Read the following from Segar: * Chapter 12: only pg 285 - 296. * Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.
- Listen to this podcast about putting excess nitrogen into a local watershed
-   SEA Semester · Fixing Nitrogen   Test Yourself Loading…   Exercises Vertical Distribution of Chlorophyll Below are typical vertical profiles of light and nutrients in the ocean.</description>
+      <description>1 Reading Watch this accessible into to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen   2 Exercises 2.1 Vertical Distribution of Chlorophyll Below are typical vertical profiles of light and nutrients in the ocean.</description>
     </item>
     
     <item>
@@ -81,7 +69,17 @@ Why R? Perhaps the best place to start is to ask ourselves why we are choosing t
       <guid>/class/content/01_physical_oceanography/</guid>
       <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
 1 Reading Read the following from Segar:
- Chapter 1: Introduction (pg. 1-2); The Oceans and Earth’s Environment (pg.</description>
+ Chapter 1:  Introduction (pg. 1-2) The Oceans and Earth’s Environment (pg.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started in R</title>
+      <link>/class/r/01_getting_started/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/r/01_getting_started/</guid>
+      <description>Our goal in this class is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
+Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop.</description>
     </item>
     
   </channel>

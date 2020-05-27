@@ -1,19 +1,17 @@
 ---
 title: Data descovery and initial plotting
-date: 2020-06-07
+date: 2020-06-04
 weight: 3
 ---
 
 
 
-<div id="individual-work" class="section level1">
-<h1>Individual Work</h1>
-<div id="reading" class="section level2">
-<h2>Reading</h2>
+<div id="reading" class="section level1">
+<h1>Reading</h1>
 <p>You should read Sections 3.1 to 3.6 (and skim the rest) of <a href="https://r4ds.had.co.nz/data-visualisation.html">Chapter 3</a> of <a href="https://r4ds.had.co.nz/index.html">R for Data Science</a> by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind <a href="https://ggplot2.tidyverse.org/index.html">ggplot</a> and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</p>
 </div>
-<div id="exercise" class="section level2">
-<h2>Exercise</h2>
+<div id="exercises" class="section level1">
+<h1>Exercises</h1>
 <p>We’re now going to take the ideas from the reading and apply them to an ocean data set, specifically, ocean profile data we saw in the <a href="/class/content/01_physical_oceanography/index.html">Physical Oceanography Class</a>. You can download this data <a href="/data/profiles.csv">here</a>.</p>
 <p>By the end of the exercise you should have:</p>
 <ol style="list-style-type: decimal">
@@ -21,24 +19,23 @@ weight: 3
 <li>experimented with a few different types</li>
 <li>advanced your thinking on how oceanographic data can be plotted</li>
 </ol>
-<div id="starting-off" class="section level3">
-<h3>Starting off</h3>
+<div id="starting-off" class="section level2">
+<h2>Starting off</h2>
 <p>I advise you to open a new R Script for this class (File -&gt; New File -&gt; R Script). You can store all the code you create in there and either run line by line (Ctrl/Cmd + Enter) or in bulk (using “play” button at top of script or by using a keyboard <a href="https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts">shortcut</a>). Don’t forget to comment on your code using <code>#</code> at the start of a line to make it clear what each piece of code does.</p>
 <p>ggplot is a package contained in the <a href="https://www.tidyverse.org/">tidyverse</a> set of packages. So to run the functions contained, we first need to load the library into our work environment. You should have already installed this by running <code>install.packages(&quot;tidyverse&quot;)</code> which is a one-time action. You do however need to load the packages you need every time you restart your R session (i.e. close and reopen RStudio)</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ──────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────── tidyverse 1.3.0 ──</code></pre>
 <pre><code>## ✓ ggplot2 3.3.0     ✓ purrr   0.3.3
 ## ✓ tibble  2.1.3     ✓ dplyr   0.8.5
 ## ✓ tidyr   1.0.2     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
-<pre><code>## ── Conflicts ─────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ────────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>This not only loads ggplot, but also other packages that we are going to use in this and other classes for tidying data sets. The “conflicts” comments are nothing to worry too much about - this is tidyverse telling us that some of the functions we just imported share names with ones already defined by R and that tidyverse will take precedent.</p>
 <p>If you had any issues installing the complete <code>tidyverse</code>, we’ll also be able to do all the exercises contained here by just loading the following libraries:</p>
 <pre class="r"><code>library(ggplot2)
 library(readr)</code></pre>
-</div>
 </div>
 <div id="reading-in-the-data" class="section level2">
 <h2>Reading in the data</h2>
@@ -119,8 +116,9 @@ Figure 1: Visualization of how values are organized in a data frame (reproduced 
 <li>sigma: Potential Density (kgm<sup>-</sup>3)</li>
 </ul></li>
 </ul>
-<div id="other-things-to-know-about-looking-at-data" class="section level3">
-<h3>Other things to know about looking at data</h3>
+</div>
+<div id="other-things-to-know-about-looking-at-data" class="section level2">
+<h2>Other things to know about looking at data</h2>
 <p>As we begin to explore data and begin to visualize it, some of the following functions can be useful.</p>
 <p>To get the number of rows in a data frame you can use</p>
 <pre class="r"><code>nrow(df)</code></pre>
@@ -148,7 +146,6 @@ df[[7]]</code></pre>
 <pre class="r"><code>df[&quot;temp&quot;]
 df[5]</code></pre>
 </div>
-</div>
 <div id="filtering-data" class="section level2">
 <h2>Filtering data</h2>
 <p>Filtering data before you plot is one of the most fundimental things you can do. It’s akin to only selecting certain rows to plot from your Excel sheet. As we’ve already seen, the data is already “tidy” so we don’t have to do anything to organize it at this point, but we’re going to create a new data frame that is filtered to give us just one of the profiles. The tidyverse has a really simple way to help us do this using the <code>filter()</code> function.</p>
@@ -173,8 +170,9 @@ x == 3</code></pre>
 <pre><code>## [1] &quot;SR04_06AQANTIX_2&quot;   &quot;P17C_31WTTUNES_1&quot;   &quot;AR11_74AB73_1&quot;     
 ## [4] &quot;P15S_31DSCG96_1&quot;    &quot;F/V Ocean Explorer&quot;</code></pre>
 <p>You can use this list to substitute in to our filter code to select a different station.</p>
-<div id="initial-plots" class="section level3">
-<h3>Initial Plots</h3>
+</div>
+<div id="initial-plots" class="section level2">
+<h2>Initial Plots</h2>
 <p>Recall from what you’ve already seen that we create a simple ggplot by specifying three things:</p>
 <ol style="list-style-type: decimal">
 <li>The data</li>
@@ -226,8 +224,8 @@ ggplot() +
   scale_y_reverse()</code></pre>
 <p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 </div>
-<div id="challenges" class="section level3">
-<h3>Challenges</h3>
+<div id="challenges" class="section level2">
+<h2>Challenges</h2>
 <p>OK, from here-on-in, I’m going to set you some challenges to grapple with. Complete answers to come at end of class don’t worry. Get through as much as you can.</p>
 <p>This is really just a forum for you to practice, experiment, break stuff and fix it. Feel free to diverge from my plan below as opportunities present themselves and you interest dictates. Plot different variables, explore the data set, have some fun.</p>
 <p>Some tips:</p>
@@ -236,104 +234,12 @@ ggplot() +
 <li>Use <code>?function_name</code> to see the help file for this function. It can help you understand what you <em>need</em> to specify, what you <em>can</em> specify, and many have good examples.</li>
 <li>keep the <a href="/docs/ggplot2-cheatsheet.pdf">ggplot cheat sheet</a> handy as this breaks down the geoms really well.</li>
 </ul>
-<p><strong>Question</strong></p>
-<blockquote>
-<p>Change the y variable to be salinity or potential density.</p>
-</blockquote>
-<blockquote>
-<p>Make your profile lines thicker and change their color.</p>
-</blockquote>
-<blockquote>
-<p>Plot all the profiles in <code>df</code> on the same plot by maping <code>Cruise</code> to the <code>group</code> or <code>color</code> aesthetic - how are these different?</p>
-</blockquote>
-<blockquote>
-<p>Filter for one station and plot a scatter plot of salinty on the x axis and temperature on the y axis</p>
-</blockquote>
-<blockquote>
-<p>Use all the profiles and make the same scatter plot which shows each station as a different color.</p>
-</blockquote>
-<blockquote>
-<p>Can you zoom in to just 0-1000m?</p>
-</blockquote>
-<blockquote>
-<!-- Let's examine the amount of zooplankton we caught in each tow. -->
-</blockquote>
-<!-- > Examine the amount of zooplankton we caught in each tow. Plot the frequency distribution of the data using `geom_histogram`. Remember, you can (and should) specify the `binwidth` parameter in the geom. (This histogram will show you the number of casts for which a certain amount of biomass was caught). What does the distribution look like? Is it pretty even (i.e. as many casts with lots of biomass as with few)? -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(biomass)) + -->
-<!--   geom_histogram(binwidth = 5) -->
-<!-- ``` -->
-<!-- Histograms can give you a good sense of the distribution of your data but if you want to see each data point explicitly, you need to make a plot where you can resolve each point. -->
-<!-- > Plot the biomass data as a function of time using points to plot each data value. Compare this plot to your histogram. Can you reconcile the two ways of looking at the same data? How is the spread of data in the histogram shown in your time series? -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(dttm, biomass)) + -->
-<!--   geom_point() -->
-<!-- ``` -->
-<!-- > Experiment with plotting this biomass data using other relevent geoms for continuous data - i.e. `geom_line()`, `geom_path()`, `geom_area()` -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(dttm, biomass)) + -->
-<!--   geom_area() -->
-<!-- ``` -->
-<!-- These are standard time series - they show us the change in a value over time. However, time might not be our most important factor in the kind of oceanography we'll be doing (a cruise typically can be thought of taking a snapshot over a wider region) so we might instead choose to plot against location. -->
-<!-- > Plot fluoroesence against latitude using points. This will produce a clearer relationship than the biomass data will show. Add on a smooth line to track that broader change. What does this tell us about how many phytoplankton are in the water as we move along our cruise track? Why might that be? -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, fluor)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() -->
-<!-- ``` -->
-<!-- What about how day and night differ? We can get at this by introducing another aesthetic such as color or shape. -->
-<!-- > Make a similar plot of fluoroesence vs latitude, but this time add a "color"" aesthetic to be the "daynight"" parameter. Add a smoothing geom too. NB: If you define the color aesthetic in the call to ggplot(), then the geom_smooth will also automatically assign itself to these two categories. Try it again with assigning the aesthetic to "shape". One thing you will notice is that ggplot will automatically assign a legend for you. Hurray! -->
-<!-- What patterns do you see? Do you think you'd see similar patterns in the amount of biomass between day and night? -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, fluor, color = daynight)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() -->
-<!-- ggplot(df, aes(lat, fluor, shape = daynight)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth(aes(linetype = daynight), color = "black") -->
-<!-- ``` -->
-<!-- > Do the same plotting for biomass. Is the pattern the same? -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, biomass, color = daynight)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() -->
-<!-- ``` -->
-<!-- Another way to look at the differences between night and day is to facet the plots (i.e. creates subplots with data that meet different criteria on each) -->
-<!-- > Use facet_wrap() to create facets for each of "day" and "night" for fluoroescence as a function of latitude. -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, fluor)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() + -->
-<!--   facet_wrap(~daynight) -->
-<!-- ``` -->
-<!-- Another way to explore this data might be in a box plot across the whole data set: -->
-<!-- > Create a boxplot for each of "day" and "night" for biomass data -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(daynight, biomass)) + -->
-<!--   geom_boxplot() -->
-<!-- ``` -->
-<!-- The outliers make this a little hard to interpret -- how would we go about zooming in a little on the y axis? For x and y axis zooming, we basically have two options. -->
-<!-- 1. We can scale the data such that we cut off values above or below a certain value using the `xlim` and `ylim` functions. In our case we will use, for example `ylim(0,100)` -->
-<!-- 2. We can simply "zoom in" without removing data using the `coord_cartesian()` function. In our case this will be `coord_cartesian(ylim = c(0,100))` -->
-<!-- The choice you make will sometimes make a big difference depending on what data you are plotting. In our case it will make a difference. -->
-<!-- > Try both methods of zooming in on the y axis - what difference does it make which method you use? -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(daynight, biomass)) + -->
-<!--   geom_boxplot() + -->
-<!--   coord_cartesian(ylim = c(0,100)) -->
-<!-- ggplot(df, aes(daynight, biomass)) + -->
-<!--   geom_boxplot() + -->
-<!--   ylim(0,100) -->
-<!-- ``` -->
-<!-- ## Additional activities -->
-<!-- Is biomass a good value to compare between stations? What might be a better metric for comparison of the amount of zooplankton between regions? How would you go about making this new data? Hint: Explore the tow_dist column a little. -->
-<!-- How would you test the relationship between the amount of biomass and the amount of phytoplankton? Look at the options within geom_smooth to see about how to plot a regression line. -->
-<!-- ```{r} -->
-<!-- ggplot(df, aes(fluor, biomass/tow_dist)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth(method='lm') + -->
-<!--   coord_cartesian(ylim = c(0,0.25)) -->
-<!-- ``` -->
-</div>
+<p>Try the following:
+* Change the y variable to be salinity or potential density.
+* Make your profile lines thicker and change their color.
+* Plot all the profiles in <code>df</code> on the same plot by maping <code>Cruise</code> to the <code>group</code> or <code>color</code> aesthetic - how are these different?
+* Filter for one station and plot a scatter plot of salinty on the x axis and temperature on the y axis
+* Use all the profiles and make the same scatter plot which shows each station as a different color.
+* Can you zoom in to just 0-1000m?</p>
 </div>
 </div>

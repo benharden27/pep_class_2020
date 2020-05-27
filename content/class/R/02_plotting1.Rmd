@@ -1,6 +1,6 @@
 ---
 title: Data descovery and initial plotting
-date: 2020-06-07
+date: 2020-06-04
 weight: 3
 ---
 
@@ -8,13 +8,11 @@ weight: 3
 knitr::opts_chunk$set(echo = TRUE, include = TRUE, message = TRUE, warning = FALSE, R.options=list(max.print=50))
 ```
 
-# Individual Work
-
-## Reading
+# Reading
 
 You should read Sections 3.1 to 3.6 (and skim the rest) of [Chapter 3](https://r4ds.had.co.nz/data-visualisation.html) of [R for Data Science](https://r4ds.had.co.nz/index.html) by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind [ggplot](https://ggplot2.tidyverse.org/index.html) and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you've mastered a few key ideas.
 
-## Exercise
+# Exercises
 
 We're now going to take the ideas from the reading and apply them to an ocean data set, specifically, ocean profile data we saw in the [Physical Oceanography Class](/class/content/01_physical_oceanography/index.html). You can download this data [here](/data/profiles.csv).
 
@@ -24,7 +22,7 @@ By the end of the exercise you should have:
 2. experimented with a few different types
 3. advanced your thinking on how oceanographic data can be plotted
 
-### Starting off
+## Starting off
 
 I advise you to open a new R Script for this class (File -> New File -> R Script). You can store all the code you create in there and either run line by line (Ctrl/Cmd + Enter) or in bulk (using "play" button at top of script or by using a keyboard [shortcut](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)). Don't forget to comment on your code using `#` at the start of a line to make it clear what each piece of code does.
 
@@ -121,7 +119,7 @@ So, from these quick-looks we can begin to describe our data set:
     + theta: Potential Temperature (°C) - the temperature the water would be if it was raised to the surface. This accounts for the slight cooling effect of increased pressure
     + sigma: Potential Density (kgm^-^3)  
 
-### Other things to know about looking at data
+## Other things to know about looking at data
 
 As we begin to explore data and begin to visualize it, some of the following functions can be useful.
 
@@ -208,7 +206,7 @@ unique(df$Cruise)
 
 You can use this list to substitute in to our filter code to select a different station.
 
-### Initial Plots
+## Initial Plots
 
 Recall from what you've already seen that we create a simple ggplot by specifying three things:
 
@@ -293,7 +291,7 @@ ggplot(df_profile, aes(temp, z)) +
 ```
 
 
-### Challenges
+## Challenges
 
 OK, from here-on-in, I'm going to set you some challenges to grapple with. Complete answers to come at end of class don't worry. Get through as much as you can.
 
@@ -305,137 +303,10 @@ Some tips:
 - Use `?function_name` to see the help file for this function. It can help you understand what you *need* to specify, what you *can* specify, and many have good examples.
 - keep the [ggplot cheat sheet](/docs/ggplot2-cheatsheet.pdf) handy as this breaks down the geoms really well.
 
-**Question**
-
-> Change the y variable to be salinity or potential density.
-
-> Make your profile lines thicker and change their color.
-
-> Plot all the profiles in `df` on the same plot by maping `Cruise` to the `group` or `color` aesthetic - how are these different?
-
-> Filter for one station and plot a scatter plot of salinty on the x axis and temperature on the y axis
-
-> Use all the profiles and make the same scatter plot which shows each station as a different color.
-
-> Can you zoom in to just 0-1000m?
-
- 
-
-> 
-<!-- Let's examine the amount of zooplankton we caught in each tow. -->
-
-<!-- > Examine the amount of zooplankton we caught in each tow. Plot the frequency distribution of the data using `geom_histogram`. Remember, you can (and should) specify the `binwidth` parameter in the geom. (This histogram will show you the number of casts for which a certain amount of biomass was caught). What does the distribution look like? Is it pretty even (i.e. as many casts with lots of biomass as with few)? -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(biomass)) + -->
-<!--   geom_histogram(binwidth = 5) -->
-<!-- ``` -->
-
-
-<!-- Histograms can give you a good sense of the distribution of your data but if you want to see each data point explicitly, you need to make a plot where you can resolve each point. -->
-
-<!-- > Plot the biomass data as a function of time using points to plot each data value. Compare this plot to your histogram. Can you reconcile the two ways of looking at the same data? How is the spread of data in the histogram shown in your time series? -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(dttm, biomass)) + -->
-<!--   geom_point() -->
-<!-- ``` -->
-
-<!-- > Experiment with plotting this biomass data using other relevent geoms for continuous data - i.e. `geom_line()`, `geom_path()`, `geom_area()` -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(dttm, biomass)) + -->
-<!--   geom_area() -->
-<!-- ``` -->
-
-<!-- These are standard time series - they show us the change in a value over time. However, time might not be our most important factor in the kind of oceanography we'll be doing (a cruise typically can be thought of taking a snapshot over a wider region) so we might instead choose to plot against location. -->
-
-<!-- > Plot fluoroesence against latitude using points. This will produce a clearer relationship than the biomass data will show. Add on a smooth line to track that broader change. What does this tell us about how many phytoplankton are in the water as we move along our cruise track? Why might that be? -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, fluor)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() -->
-<!-- ``` -->
-
-<!-- What about how day and night differ? We can get at this by introducing another aesthetic such as color or shape. -->
-
-<!-- > Make a similar plot of fluoroesence vs latitude, but this time add a "color"" aesthetic to be the "daynight"" parameter. Add a smoothing geom too. NB: If you define the color aesthetic in the call to ggplot(), then the geom_smooth will also automatically assign itself to these two categories. Try it again with assigning the aesthetic to "shape". One thing you will notice is that ggplot will automatically assign a legend for you. Hurray! -->
-
-<!-- What patterns do you see? Do you think you'd see similar patterns in the amount of biomass between day and night? -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, fluor, color = daynight)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() -->
-
-<!-- ggplot(df, aes(lat, fluor, shape = daynight)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth(aes(linetype = daynight), color = "black") -->
-<!-- ``` -->
-
-<!-- > Do the same plotting for biomass. Is the pattern the same? -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, biomass, color = daynight)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() -->
-<!-- ``` -->
-
-<!-- Another way to look at the differences between night and day is to facet the plots (i.e. creates subplots with data that meet different criteria on each) -->
-
-<!-- > Use facet_wrap() to create facets for each of "day" and "night" for fluoroescence as a function of latitude. -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(lat, fluor)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth() + -->
-<!--   facet_wrap(~daynight) -->
-
-<!-- ``` -->
-
-
-<!-- Another way to explore this data might be in a box plot across the whole data set: -->
-
-<!-- > Create a boxplot for each of "day" and "night" for biomass data -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(daynight, biomass)) + -->
-<!--   geom_boxplot() -->
-<!-- ``` -->
-
-<!-- The outliers make this a little hard to interpret -- how would we go about zooming in a little on the y axis? For x and y axis zooming, we basically have two options. -->
-
-<!-- 1. We can scale the data such that we cut off values above or below a certain value using the `xlim` and `ylim` functions. In our case we will use, for example `ylim(0,100)` -->
-<!-- 2. We can simply "zoom in" without removing data using the `coord_cartesian()` function. In our case this will be `coord_cartesian(ylim = c(0,100))` -->
-
-<!-- The choice you make will sometimes make a big difference depending on what data you are plotting. In our case it will make a difference. -->
-
-<!-- > Try both methods of zooming in on the y axis - what difference does it make which method you use? -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(daynight, biomass)) + -->
-<!--   geom_boxplot() + -->
-<!--   coord_cartesian(ylim = c(0,100)) -->
-
-<!-- ggplot(df, aes(daynight, biomass)) + -->
-<!--   geom_boxplot() + -->
-<!--   ylim(0,100) -->
-
-<!-- ``` -->
-
-
-<!-- ## Additional activities -->
-
-<!-- Is biomass a good value to compare between stations? What might be a better metric for comparison of the amount of zooplankton between regions? How would you go about making this new data? Hint: Explore the tow_dist column a little. -->
-
-<!-- How would you test the relationship between the amount of biomass and the amount of phytoplankton? Look at the options within geom_smooth to see about how to plot a regression line. -->
-
-<!-- ```{r} -->
-<!-- ggplot(df, aes(fluor, biomass/tow_dist)) + -->
-<!--   geom_point() + -->
-<!--   geom_smooth(method='lm') + -->
-<!--   coord_cartesian(ylim = c(0,0.25)) -->
-<!-- ``` -->
-
-
+Try the following:
+* Change the y variable to be salinity or potential density.
+* Make your profile lines thicker and change their color.
+* Plot all the profiles in `df` on the same plot by maping `Cruise` to the `group` or `color` aesthetic - how are these different?
+* Filter for one station and plot a scatter plot of salinty on the x axis and temperature on the y axis
+* Use all the profiles and make the same scatter plot which shows each station as a different color.
+* Can you zoom in to just 0-1000m?
