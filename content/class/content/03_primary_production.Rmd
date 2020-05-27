@@ -3,6 +3,11 @@ title: Phytoplankton and Nutrients
 date: 2020-06-03
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+```
+
 # Reading
 
 * Watch this accessible into to phytoplankton:
@@ -27,10 +32,40 @@ date: 2020-06-03
 
 Below are typical vertical profiles of light and nutrients in the ocean.
 
-!(/images/light_nutrients.jpg)
+!p[(/images/light_nutrients.jpg)
 
 * Q: Describe the patterns that you see in each - why do they behave the way they do?
 * Q: Given that phytoplankton need both light and nutrients to grow, can you hyptothesize the vertical distribution of phytoplankton for these profiles?
+
+## Seasonal Cycle
+
+We saw in our class on Temperture and Salinity, that the mixed-layer at mid-latitudes increases in depth during the winter due to strong, cold winds, before shoaling in the spring and into the summer when a strong thermocline (pycnocline) is developed.
+
+* Q: How do you think this will affect the availability of nutrients in the surface water over the course of the year?
+
+Below is some data from the [Ocean Observatories Initiative](https://oceanobservatories.org/), a massive undertaking to collect data from around the globe throughout the year. Shown in the three plots are surface concentrations of Chlorophyll-a, Oxygen, and Nitrate from summer 2018 to summer 2019.
+
+```{r}
+ts <- read_csv("data/ooi.csv")
+ctd <- read_csv("data/ctd.csv") %>%
+  filter(dep <= 1000)
+
+vars<-c(fluorometric_chlorophyll_a="Chlorophyll-a (mg/L)",
+        dissolved_oxygen="Dissolved Oxygen (umol/kg)",
+        nitrate_concentration="Nitrate (umol/L)")
+
+ggplot(ts,aes(time,value))+
+  geom_point(size = .3) +
+  facet_wrap(~factor(key,names(vars)),ncol=1,scales="free_y",strip.position = "left",labeller=as_labeller(vars))+
+  labs(x=NULL,y=NULL)+
+  scale_x_datetime(date_breaks="2 months", date_labels=("%m/%y"))+
+  theme_bw() +
+  theme(strip.placement = "outside",
+        strip.background = element_blank())
+```
+
+* Q: How does the seasonal cycle in nitrate compare with your prediction above?
+* Q: Describe the seasonal cycle in phytoplankton growth - How does this relate to the seasonal cycle in oxygen?
 
 ## Where are the phytoplankton?
 
@@ -42,6 +77,10 @@ Yellows and reds indicate more chlorophyll and blues and purples less. This is t
 
 * Q: What patterns do you observe? Where is chlorophyll generally higher and lower?
 * Q: What suggestions do you have for these patterns?
+
+
+
+
 
 ## HNLC
 
