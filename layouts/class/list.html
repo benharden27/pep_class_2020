@@ -16,6 +16,7 @@
 			{{- range .Data.Pages.ByDate -}}
 			{{- if (in (.Site.Params.excludedTypes | default (slice "page")) .Type) -}}
 			{{- else -}}
+			{{- if not .Draft -}}
 			<li class="post">
 				<div class="post-header">
 					<div class="meta">
@@ -26,20 +27,12 @@
 					</div>
 					<div class="matter">
 						<h4 class="title small">
-							<a href="{{ .RelPermalink }}">{{.Title}}{{ if .Draft }}<sup class="draft-label">DRAFT</sup>{{ end }}</a>
+							<a href="{{ .RelPermalink }}">{{.Title}}</a>
 						</h4>
-						<span class="description">
-							{{ if isset .Params "description" }}
-								{{ .Description }}
-							{{ else if gt (len .RawContent) 120 }}
-								{{ slicestr .RawContent 0 120 }}...
-							{{ else }}
-								{{ .RawContent }}
-							{{ end }}
-						</span>
 					</div>
 				</div>
 			</li>
+			{{- end -}}
 			{{- end -}}
 			{{- end -}}
 		</ul>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Data descovery and initial plotting - PEP 2020</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Data descovery and initial plotting - PEP Class 2020</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <meta itemprop="name" content="Data descovery and initial plotting">
 <meta itemprop="description" content="Reading You should read Sections 3.1 to 3.6 (and skim the rest) of Chapter 3 of R for Data Science by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind ggplot and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.">
@@ -10,7 +10,7 @@
 
 <meta itemprop="datePublished" content="2020-06-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-06-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3014">
+<meta itemprop="wordCount" content="3050">
 
 
 
@@ -42,12 +42,12 @@
 	
 		<div class="avatar">
 			<a href="/">
-				<img src="/images/dac-logo-white278x80.png" alt="PEP 2020" />
+				<img src="/images/dac-logo-white278x80.png" alt="PEP Class 2020" />
 			</a>
 		</div>
 	
-	<h1 class="site-title"><a href="/">PEP 2020</a></h1>
-	<div class="site-description"><p>Class and Career Development</p><nav class="nav social">
+	<h1 class="site-title"><a href="/">PEP Class 2020</a></h1>
+	<div class="site-description"><p></p><nav class="nav social">
 			<ul class="flat"></ul>
 		</nav></div>
 
@@ -59,11 +59,15 @@
 			</li>
 			
 			<li>
-				<a href="/class">Class</a>
+				<a href="/class">Classes</a>
 			</li>
 			
 			<li>
-				<a href="/career">Career Development</a>
+				<a href="/tags/oceanography">Oceanography</a>
+			</li>
+			
+			<li>
+				<a href="/r_resources">R Resources</a>
 			</li>
 			
 		</ul>
@@ -93,6 +97,7 @@
 <div id="reading" class="section level1">
 <h1>Reading</h1>
 <p>You should read Sections 3.1 to 3.6 (and skim the rest) of <a href="https://r4ds.had.co.nz/data-visualisation.html">Chapter 3</a> of <a href="https://r4ds.had.co.nz/index.html">R for Data Science</a> by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind <a href="https://ggplot2.tidyverse.org/index.html">ggplot</a> and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</p>
+<p>You should also go through <a href="https://rstudio.cloud/learn/primers/1.1">this primer</a> on visualization in R, which includes interactive code chunks for you to try out.</p>
 </div>
 <div id="exercises" class="section level1">
 <h1>Exercises</h1>
@@ -106,14 +111,16 @@
 <div id="starting-off" class="section level2">
 <h2>Starting off</h2>
 <p>I advise you to open a new R Script for this class (File -&gt; New File -&gt; R Script). You can store all the code you create in there and either run line by line (Ctrl/Cmd + Enter) or in bulk (using “play” button at top of script or by using a keyboard <a href="https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts">shortcut</a>). Don’t forget to comment on your code using <code>#</code> at the start of a line to make it clear what each piece of code does.</p>
-<p>ggplot is a package contained in the <a href="https://www.tidyverse.org/">tidyverse</a> set of packages. So to run the functions contained, we first need to load the library into our work environment. You should have already installed this by running <code>install.packages(&quot;tidyverse&quot;)</code> which is a one-time action. You do however need to load the packages you need every time you restart your R session (i.e. close and reopen RStudio)</p>
+<p>ggplot is a package contained in the <a href="https://www.tidyverse.org/">tidyverse</a> set of packages. So to run the functions contained, we first need to load the library into our work environment. You should have already installed this by running</p>
+<pre class="r"><code>`install.packages(&quot;tidyverse&quot;)`</code></pre>
+<p>which is a one-time action. You do however need to load the packages you need every time you restart your R session (i.e. close and reopen RStudio)</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ── Attaching packages ───────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
 <pre><code>## ✓ ggplot2 3.3.0     ✓ purrr   0.3.3
 ## ✓ tibble  2.1.3     ✓ dplyr   0.8.5
 ## ✓ tidyr   1.0.2     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
-<pre><code>## ── Conflicts ────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ──────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>This not only loads ggplot, but also other packages that we are going to use in this and other classes for tidying data sets. The “conflicts” comments are nothing to worry too much about - this is tidyverse telling us that some of the functions we just imported share names with ones already defined by R and that tidyverse will take precedent.</p>
@@ -136,7 +143,7 @@ library(readr)</code></pre>
 <h2>Initial look at the data</h2>
 <p>The data has been imported into a <strong>data frame</strong> in R. Side note: Technically we’re working with a tidyverse “tibble”, but its built on the base R data frame, so let’s not get bogged down in details at this point. I’ll refer to them as data frames throughout.</p>
 <p>Data frames are the most common way of organizing data in R and the form that ggplot requires for making plots. It’s very similar to how Excel organizes data in rows and columns and, like Excel, there are a number of ways people choose to organize their data in this format. However, ggplot (and other tidyverse packages) focus on using “tidy” data: Each observation has a row and each variable is organized into a column.</p>
-<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
 <img src="images/tidy_1.png" alt="Visualization of how values are organized in a data frame (reproduced from R for Data Science)" width="100%" />
 <p class="caption">
 Figure 1: Visualization of how values are organized in a data frame (reproduced from R for Data Science)
@@ -232,16 +239,16 @@ df[5]</code></pre>
 </div>
 <div id="filtering-data" class="section level2">
 <h2>Filtering data</h2>
-<p>Filtering data before you plot is one of the most fundimental things you can do. It’s akin to only selecting certain rows to plot from your Excel sheet. As we’ve already seen, the data is already “tidy” so we don’t have to do anything to organize it at this point, but we’re going to create a new data frame that is filtered to give us just one of the profiles. The tidyverse has a really simple way to help us do this using the <code>filter()</code> function.</p>
+<p>Filtering data before you plot is one of the most fundamental things you can do. It’s akin to only selecting certain rows to plot from your Excel sheet. As we’ve already seen, the data is already “tidy” so we don’t have to do anything to organize it at this point, but we’re going to create a new data frame that is filtered to give us just one of the profiles. The tidyverse has a really simple way to help us do this using the <code>filter()</code> function.</p>
 <pre class="r"><code>df_profile &lt;- filter(df, Cruise == &quot;SR04_06AQANTIX_2&quot;)</code></pre>
 <p>The filter function takes in a data frame (<code>df</code> in out case) and then some criteria for which data to select. In our case, I’ve said that the <code>Cruise</code> column must be <code>SR04_06AQANTIX_2</code>.</p>
-<p>The <code>==</code> here is R’s way of saying: <em>test to see if these things are equivelent</em>. For example:</p>
+<p>The <code>==</code> here is R’s way of saying: <em>test to see if these things are equivalent</em>. For example:</p>
 <pre class="r"><code>1 == 1</code></pre>
 <pre><code>## [1] TRUE</code></pre>
 <p>and</p>
 <pre class="r"><code>1 == 2</code></pre>
 <pre><code>## [1] FALSE</code></pre>
-<p>Equivelences in a data frame or a vector work by looking through the whole list of values and assigning a <code>TRUE</code> or <code>FALSE</code> depending on if they are the same. For example (remember, <code>c()</code> is the way to combine values into a vector):</p>
+<p>Equivalences in a data frame or a vector work by looking through the whole list of values and assigning a <code>TRUE</code> or <code>FALSE</code> depending on if they are the same. For example (remember, <code>c()</code> is the way to combine values into a vector):</p>
 <pre class="r"><code>x &lt;- c(1,2,3,2,3,4,3,4,5,6,5)
 x == 3</code></pre>
 <pre><code>##  [1] FALSE FALSE  TRUE FALSE  TRUE FALSE  TRUE FALSE FALSE FALSE FALSE</code></pre>
@@ -266,7 +273,7 @@ x == 3</code></pre>
 <p>So, as a first example, we can plot the temperature data over depth in the following way:</p>
 <pre class="r"><code>ggplot(data = df_profile) +
   geom_line(aes(x = z, y = temp))</code></pre>
-<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
 <p>Where we have specified that:</p>
 <ol style="list-style-type: decimal">
 <li>Our data is contained in the data frame, <code>df_profile</code></li>
@@ -290,28 +297,29 @@ ggplot() +
   geom_line()</code></pre>
 <p>Doing this does <em>not</em> generate the plot, it just creates a ggplot object that can be deployed later by calling it by name or by adding another geom (for example a smoothing geom):</p>
 <pre class="r"><code>g</code></pre>
-<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
 <p>From a traditional science perspective, this might be the best way to plot the data - the independent variable (z) is on the x axis and the dependent variable (temperature) is on the y axis. From an oceanography perspective, it makes more sense to have depth be on the y axis and temperature on the x axis. Further, we can also flip the y axis to make depth be greater the further you go down.</p>
-<p>Doing this in ggplot requires us to use one of the <code>scale_*</code> functions. These functions basicall say: <em>Take the mapping we’ve already set up in out ggplot and adjust how the data is mapped</em>. This includes telling ggplot what range of values to map to out x axis, whether we want a log axis, what colors to map our data to, and, in our case, what direction to plot the data in. We’ll talk more about the <code>scale_*</code> functions in our next class.</p>
+<p>Doing this in ggplot requires us to use one of the <code>scale_*</code> functions. These functions basically say: <em>Take the mapping we’ve already set up in out ggplot and adjust how the data is mapped</em>. This includes telling ggplot what range of values to map to out x axis, whether we want a log axis, what colors to map our data to, and, in our case, what direction to plot the data in. We’ll talk more about the <code>scale_*</code> functions in our next class.</p>
 <pre class="r"><code>ggplot(df_profile, aes(temp, z)) +
   geom_line() +
   scale_y_reverse()</code></pre>
-<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 <p>Uh oh. What a mess. What’s happening here? ggplot actually has two geoms that can draw lines. We’ve been using <code>geom_line()</code> so far, but underneath the hood, this function actually sorts the y variable along the x axis. This can be useful in many cases were data is not sorted already, but in our case it means that the nice sweeping curve gets deconstructed. For our purposes, we’re going to want to use <code>geom_path()</code> which joins the data up in the order they appear in the data set.</p>
 <pre class="r"><code>ggplot(df_profile, aes(temp, z)) +
   geom_path() +
   scale_y_reverse()</code></pre>
-<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 <p>We can also always avoid this joining-up-in-the-wrong-order issue by using points. Although for profiles, it’s never quite as effective.</p>
 <pre class="r"><code>ggplot(df_profile, aes(temp, z)) +
   geom_point() +
   scale_y_reverse()</code></pre>
-<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 </div>
 <div id="challenges" class="section level2">
 <h2>Challenges</h2>
 <p>OK, from here-on-in, I’m going to set you some challenges to grapple with. Complete answers to come at end of class don’t worry. Get through as much as you can.</p>
 <p>This is really just a forum for you to practice, experiment, break stuff and fix it. Feel free to diverge from my plan below as opportunities present themselves and you interest dictates. Plot different variables, explore the data set, have some fun.</p>
+<p><a href="https://classroom.google.com/u/4/c/ODEyOTAzMjY5MjJa/a/ODgzOTM0MzcyMDBa/details">Submit</a> an R script with your solutions to any of these challenges to Google Classroom.</p>
 <p>Some tips:</p>
 <ul>
 <li>You should use <a href="https://r4ds.had.co.nz/data-visualisation.html">R4DS Chapter 3</a> as a good source of information to help you complete the exercises.</li>
@@ -321,8 +329,8 @@ ggplot() +
 <p>Try the following:
 * Change the y variable to be salinity or potential density.
 * Make your profile lines thicker and change their color.
-* Plot all the profiles in <code>df</code> on the same plot by maping <code>Cruise</code> to the <code>group</code> or <code>color</code> aesthetic - how are these different?
-* Filter for one station and plot a scatter plot of salinty on the x axis and temperature on the y axis
+* Plot all the profiles in <code>df</code> on the same plot by mapping <code>Cruise</code> to the <code>group</code> or <code>color</code> aesthetic - how are these different?
+* Filter for one station and plot a scatter plot of salinity on the x axis and temperature on the y axis
 * Use all the profiles and make the same scatter plot which shows each station as a different color.
 * Can you zoom in to just 0-1000m?</p>
 </div>

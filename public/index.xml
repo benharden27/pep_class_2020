@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello on PEP 2020</title>
+    <title>Hello on PEP Class 2020</title>
     <link>/</link>
-    <description>Recent content in Hello on PEP 2020</description>
+    <description>Recent content in Hello on PEP Class 2020</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© PEP 2020</copyright>
@@ -58,7 +58,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/03_primary_production/</guid>
-      <description>1 Reading Watch this accessible into to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen   2 Exercises 2.1 Vertical Distribution of Chlorophyll Below are typical vertical profiles of light and nutrients in the ocean.</description>
+      <description>1 Reading Watch this accessible intro to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen   2 Exercises Submit a Google Doc with your answers to these questions to Google Classroom.</description>
     </item>
     
     <item>
@@ -78,7 +78,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/r/01_getting_started/</guid>
-      <description>Our goal in this class is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
+      <description>Our goal in learning R is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
 Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop.</description>
     </item>
     
@@ -90,6 +90,17 @@ Why R? Perhaps the best place to start is to ask ourselves why we are choosing t
       <guid>/intro/</guid>
       <description>Course Goals During the course we have two main goals:
 Develop student understanding of topics in ocean and environmental science pertinent to global climate change with a focus on activities in the Woods Hole science community. Build student research skills to aid their summer internship work and future careers.  The first goal will be acheived through a series of classes on basic oceanography spanning physics, chemistry and biology. These classes will be supplimented with more advanced topics, introduced by leading researchers in the Woods Hole community, that will bring students’ understanding to the frontier of current understanding.</description>
+    </item>
+    
+    <item>
+      <title>R Resources</title>
+      <link>/r_resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/r_resources/</guid>
+      <description>Learning any programming language can be both completely frustrating and hugely rewarding. Be kind to yourself and try to see past the struggles to the glorious highs that will come.
+We’ll be doing some intro work in the course, mostly centered around data visualization, but here is a selection of other resources that you might find useful in exploring the field further.
+R for Data Science by Garrett Grolemund and Hadley Wickham: Core text on exploring data in R.</description>
     </item>
     
   </channel>

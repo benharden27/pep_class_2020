@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE, include = TRUE, message = TRUE, warning = FAL
 
 You should read Sections 3.1 to 3.6 (and skim the rest) of [Chapter 3](https://r4ds.had.co.nz/data-visualisation.html) of [R for Data Science](https://r4ds.had.co.nz/index.html) by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind [ggplot](https://ggplot2.tidyverse.org/index.html) and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you've mastered a few key ideas.
 
+You should also go through [this primer](https://rstudio.cloud/learn/primers/1.1) on visualization in R, which includes interactive code chunks for you to try out.
+
 # Exercises
 
 We're now going to take the ideas from the reading and apply them to an ocean data set, specifically, ocean profile data we saw in the [Physical Oceanography Class](/class/content/01_physical_oceanography/index.html). You can download this data [here](/data/profiles.csv).
@@ -26,9 +28,15 @@ By the end of the exercise you should have:
 
 I advise you to open a new R Script for this class (File -> New File -> R Script). You can store all the code you create in there and either run line by line (Ctrl/Cmd + Enter) or in bulk (using "play" button at top of script or by using a keyboard [shortcut](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts)). Don't forget to comment on your code using `#` at the start of a line to make it clear what each piece of code does.
 
-ggplot is a package contained in the [tidyverse](https://www.tidyverse.org/) set of packages. So to run the functions contained, we first need to load the library into our work environment. You should have already installed this by running `install.packages("tidyverse")` which is a one-time action. You do however need to load the packages you need every time you restart your R session (i.e. close and reopen RStudio)
+ggplot is a package contained in the [tidyverse](https://www.tidyverse.org/) set of packages. So to run the functions contained, we first need to load the library into our work environment. You should have already installed this by running
 
-```{r, include = TRUE}
+```{r, eval = FALSE}
+`install.packages("tidyverse")`
+```
+
+which is a one-time action. You do however need to load the packages you need every time you restart your R session (i.e. close and reopen RStudio)
+
+```{r}
 library(tidyverse)
 ```
 
@@ -163,7 +171,7 @@ df[5]
 
 ## Filtering data
 
-Filtering data before you plot is one of the most fundimental things you can do. It's akin to only selecting certain rows to plot from your Excel sheet. As we've already seen, the data is already "tidy" so we don't have to do anything to organize it at this point, but we're going to create a new data frame that is filtered to give us just one of the profiles. The tidyverse has a really simple way to help us do this using the `filter()` function.
+Filtering data before you plot is one of the most fundamental things you can do. It's akin to only selecting certain rows to plot from your Excel sheet. As we've already seen, the data is already "tidy" so we don't have to do anything to organize it at this point, but we're going to create a new data frame that is filtered to give us just one of the profiles. The tidyverse has a really simple way to help us do this using the `filter()` function.
 
 ```{r}
 df_profile <- filter(df, Cruise == "SR04_06AQANTIX_2")
@@ -171,7 +179,7 @@ df_profile <- filter(df, Cruise == "SR04_06AQANTIX_2")
 
 The filter function takes in a data frame (`df` in out case) and then some criteria for which data to select. In our case, I've said that the `Cruise` column must be `SR04_06AQANTIX_2`.
 
-The `==` here is R's way of saying: *test to see if these things are equivelent*. For example:
+The `==` here is R's way of saying: *test to see if these things are equivalent*. For example:
 
 ```{r}
 1 == 1
@@ -183,7 +191,7 @@ and
 1 == 2
 ```
 
-Equivelences in a data frame or a vector work by looking through the whole list of values and assigning a `TRUE` or `FALSE` depending on if they are the same. For example (remember, `c()` is the way to combine values into a vector):
+Equivalences in a data frame or a vector work by looking through the whole list of values and assigning a `TRUE` or `FALSE` depending on if they are the same. For example (remember, `c()` is the way to combine values into a vector):
 
 ```{r}
 x <- c(1,2,3,2,3,4,3,4,5,6,5)
@@ -265,7 +273,7 @@ g
 
 From a traditional science perspective, this might be the best way to plot the data - the independent variable (z) is on the x axis and the dependent variable (temperature) is on the y axis. From an oceanography perspective, it makes more sense to have depth be on the y axis and temperature on the x axis. Further, we can also flip the y axis to make depth be greater the further you go down.
 
-Doing this in ggplot requires us to use one of the `scale_*` functions. These functions basicall say: *Take the mapping we've already set up in out ggplot and adjust how the data is mapped*. This includes telling ggplot what range of values to map to out x axis, whether we want a log axis, what colors to map our data to, and, in our case, what direction to plot the data in. We'll talk more about the `scale_*` functions in our next class.
+Doing this in ggplot requires us to use one of the `scale_*` functions. These functions basically say: *Take the mapping we've already set up in out ggplot and adjust how the data is mapped*. This includes telling ggplot what range of values to map to out x axis, whether we want a log axis, what colors to map our data to, and, in our case, what direction to plot the data in. We'll talk more about the `scale_*` functions in our next class.
 
 ```{r}
 ggplot(df_profile, aes(temp, z)) +
@@ -293,9 +301,12 @@ ggplot(df_profile, aes(temp, z)) +
 
 ## Challenges
 
+
 OK, from here-on-in, I'm going to set you some challenges to grapple with. Complete answers to come at end of class don't worry. Get through as much as you can.
 
 This is really just a forum for you to practice, experiment, break stuff and fix it. Feel free to diverge from my plan below as opportunities present themselves and you interest dictates. Plot different variables, explore the data set, have some fun.
+
+[Submit](https://classroom.google.com/u/4/c/ODEyOTAzMjY5MjJa/a/ODgzOTM0MzcyMDBa/details) an R script with your solutions to any of these challenges to Google Classroom.
 
 Some tips:
 
@@ -306,7 +317,7 @@ Some tips:
 Try the following:
 * Change the y variable to be salinity or potential density.
 * Make your profile lines thicker and change their color.
-* Plot all the profiles in `df` on the same plot by maping `Cruise` to the `group` or `color` aesthetic - how are these different?
-* Filter for one station and plot a scatter plot of salinty on the x axis and temperature on the y axis
+* Plot all the profiles in `df` on the same plot by mapping `Cruise` to the `group` or `color` aesthetic - how are these different?
+* Filter for one station and plot a scatter plot of salinity on the x axis and temperature on the y axis
 * Use all the profiles and make the same scatter plot which shows each station as a different color.
 * Can you zoom in to just 0-1000m?

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Classes on PEP 2020</title>
+    <title>Classes on PEP Class 2020</title>
     <link>/class/</link>
-    <description>Recent content in Classes on PEP 2020</description>
+    <description>Recent content in Classes on PEP Class 2020</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© PEP 2020</copyright>
@@ -58,7 +58,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/03_primary_production/</guid>
-      <description>1 Reading Watch this accessible into to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen   2 Exercises 2.1 Vertical Distribution of Chlorophyll Below are typical vertical profiles of light and nutrients in the ocean.</description>
+      <description>1 Reading Watch this accessible intro to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen   2 Exercises Submit a Google Doc with your answers to these questions to Google Classroom.</description>
     </item>
     
     <item>
@@ -78,7 +78,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/r/01_getting_started/</guid>
-      <description>Our goal in this class is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
+      <description>Our goal in learning R is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
 Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop.</description>
     </item>
     

@@ -1,17 +1,20 @@
 ---
 title: Temperature, Salinity and Density
 date: 2020-06-02
+category: "oceanography"
 output:
   blogdown::html_page:
     number_sections: true
 ---
+
+Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 ```
 
-Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
 
 # Reading
 
@@ -28,6 +31,8 @@ Read the following from [Segar](https://www.reefimages.com/oceansci.php):
 # Exercises
 
 Remember, these questions are meant to help you puzzle out some patterns. We will discuss everything in peer groups and in class. Please note your responses in the exercise assignment (ungraded).
+
+Create a Google Doc with your answers or thoughts on each question and [submit](https://classroom.google.com/u/4/c/ODEyOTAzMjY5MjJa/a/ODgzODk1NTQyNTda/details) on Google Classroom.
 
 ## Depth profiles from around the world
 
