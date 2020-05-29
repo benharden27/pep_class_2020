@@ -67,7 +67,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/01_physical_oceanography/</guid>
-      <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
+      <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundamental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
 1 Reading Read the following from Segar:
  Chapter 1:  Introduction (pg. 1-2) The Oceans and Earth’s Environment (pg.</description>
     </item>
@@ -79,7 +79,8 @@ The following video came from a cruise in the North Atlantic in 2012.
       
       <guid>/class/r/01_getting_started/</guid>
       <description>Our goal in learning R is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
-Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop.</description>
+NOTE: There is no exercise submission or Peer Discussion requirements for this work, but please reach out on the course Slack channel if you have any technical issues.
+Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R.</description>
     </item>
     
   </channel>

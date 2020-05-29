@@ -67,7 +67,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/01_physical_oceanography/</guid>
-      <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
+      <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundamental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
 1 Reading Read the following from Segar:
  Chapter 1:  Introduction (pg. 1-2) The Oceans and Earth’s Environment (pg.</description>
     </item>
@@ -79,7 +79,8 @@ The following video came from a cruise in the North Atlantic in 2012.
       
       <guid>/class/r/01_getting_started/</guid>
       <description>Our goal in learning R is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
-Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop.</description>
+NOTE: There is no exercise submission or Peer Discussion requirements for this work, but please reach out on the course Slack channel if you have any technical issues.
+Why R? Perhaps the best place to start is to ask ourselves why we are choosing to use R.</description>
     </item>
     
     <item>
@@ -89,7 +90,7 @@ Why R? Perhaps the best place to start is to ask ourselves why we are choosing t
       
       <guid>/intro/</guid>
       <description>Course Goals During the course we have two main goals:
-Develop student understanding of topics in ocean and environmental science pertinent to global climate change with a focus on activities in the Woods Hole science community. Build student research skills to aid their summer internship work and future careers.  The first goal will be acheived through a series of classes on basic oceanography spanning physics, chemistry and biology. These classes will be supplimented with more advanced topics, introduced by leading researchers in the Woods Hole community, that will bring students’ understanding to the frontier of current understanding.</description>
+Develop student understanding of topics in ocean and environmental science pertinent to global climate change with a focus on activities in the Woods Hole science community. Build student research skills to aid their summer internship work and future careers.  The first goal will be achieved through a series of classes on basic oceanography spanning physics, chemistry and biology. These classes will be supplemented with more advanced topics, introduced by leading researchers in the Woods Hole community, that will bring students’ understanding to the frontier of current understanding.</description>
     </item>
     
     <item>
@@ -101,6 +102,16 @@ Develop student understanding of topics in ocean and environmental science perti
       <description>Learning any programming language can be both completely frustrating and hugely rewarding. Be kind to yourself and try to see past the struggles to the glorious highs that will come.
 We’ll be doing some intro work in the course, mostly centered around data visualization, but here is a selection of other resources that you might find useful in exploring the field further.
 R for Data Science by Garrett Grolemund and Hadley Wickham: Core text on exploring data in R.</description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/schedule/</guid>
+      <description>Daily Routine For most days of the class, the scheduled routine will be in EDT (PDT):
+ 1200 (0900): Deadline for submission of exercise responses 1200-1300 (0900-1000): 30 min Peer Discussions 1300-1400 (0900-1100): Slack Comments 1400-1500 (1100-1200: Class Time  Ahead of the peer discussion, you will need to have read the days content and submitted something as a response to the exercises posted. East coast students will probably be able to accomplish the reading and exercises the morning of the class, West coast students will probably have to do this work the previous evening.</description>
     </item>
     
   </channel>

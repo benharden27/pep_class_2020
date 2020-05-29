@@ -7,7 +7,7 @@ output:
     number_sections: true
 ---
 
-Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundimental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
+Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundamental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
 
 
 ```{r setup, include=FALSE}
@@ -92,9 +92,9 @@ group_by(df, Cruise) %>%
 
 ```
 
-* Q1: Use the WOCE surface temperature and salinity maps (above) to match the profiles up to their locations based on the surface temperature and salinities in the profiles.
+* Q1: Use the WOCE surface temperature and salinity maps (above) to match the profiles up to their locations based on the surface temperature and salinity in the profiles.
 
-* Q2: Which profile/regions have the strongest and weakest pyconoclines? Why?
+* Q2: Which profile/regions have the strongest and weakest pycnoclines? Why?
 
 ## Seasonal cycle
 

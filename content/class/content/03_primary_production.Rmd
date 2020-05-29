@@ -1,7 +1,8 @@
 ---
 title: Phytoplankton and Nutrients
 date: 2020-06-03
-category: "oceanography"
+category:
+  - Oceanography
 output:
   blogdown::html_page:
     number_sections: true
@@ -39,11 +40,11 @@ Below are typical vertical profiles of light and nutrients in the ocean.
 
 * Q1: Describe the patterns that you see in each - why do they behave the way they do?
 
-* Q2: Given that phytoplankton need both light and nutrients to grow, can you hyptothesize the vertical distribution of phytoplankton for these profiles?
+* Q2: Given that phytoplankton need both light and nutrients to grow, can you hypothesize the vertical distribution of phytoplankton for these profiles?
 
 ## Seasonal Cycle
 
-We saw in our class on Temperture and Salinity, that the mixed-layer at mid-latitudes increases in depth during the winter due to strong, cold winds, before shoaling in the spring and into the summer when a strong thermocline (pycnocline) is developed.
+We saw in our class on Temperature and Salinity, that the mixed-layer at mid-latitudes increases in depth during the winter due to strong, cold winds, before shoaling in the spring and into the summer when a strong thermocline (pycnocline) is developed.
 
 * Q3: How do you think this will affect the availability of nutrients in the surface water over the course of the year?
 

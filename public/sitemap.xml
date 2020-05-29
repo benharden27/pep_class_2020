@@ -62,6 +62,10 @@
   </url>
   
   <url>
+    <loc>/schedule/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <priority>0</priority>
   </url>

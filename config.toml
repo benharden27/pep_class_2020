@@ -15,7 +15,7 @@ googleAnalytics = "UA-123-45"
 disqusShortname = "ink-demo"
 
 [params]
-	subtitle = ""
+	subtitle = "Ocean and Environmental Sciences"
 
 	# Optional 64x64 avatar image.
 	avatar = "/images/dac-logo-white278x80.png"
@@ -47,9 +47,14 @@ url = "/r_resources"
 weight = 3
 
 [[menu.main]]
-name = "Oceanography"
-url = "/tags/oceanography"
-weight = 3
+name = "Syllabus"
+url = "/docs/PEP2020_syllabus.pdf"
+weight = 5
+
+[[menu.main]]
+name = "Schedule"
+url = "/Schedule"
+weight = 4
 
 #[[params.social]]
 #name = "Github"

@@ -9,9 +9,9 @@ During the course we have two main goals:
 1. Develop student understanding of topics in ocean and environmental science pertinent to global climate change with a focus on activities in the Woods Hole science community.
 1. Build student research skills to aid their summer internship work and future careers.
 
-The first goal will be acheived through a series of classes on basic oceanography spanning physics, chemistry and biology. These classes will be supplimented with more advanced topics, introduced by leading researchers in the Woods Hole community, that will bring students' understanding to the frontier of current understanding.
+The first goal will be achieved through a series of classes on basic oceanography spanning physics, chemistry and biology. These classes will be supplemented with more advanced topics, introduced by leading researchers in the Woods Hole community, that will bring students' understanding to the frontier of current understanding.
 
-The second goal will be acheived through working on mini-projects centered on data collected on two previous PEP cruises out of Woods Hole. Students will work in teams to build on the introductory class in oceanography to develop their understanding of a particular focus area. To do this, students will need to develop capacity in finding and reading scientific literature, creating hyptotheses, vizualizing geospatial data, summarizing results, collaborating as a team, and creating a professional research poster. The development of these skills will serve as a primer for the internship research work students will conduct over the course of the rest of the summer.
+The second goal will be achieved through working on mini-projects centered on data collected on two previous PEP cruises out of Woods Hole. Students will work in teams to build on the introductory class in oceanography to develop their understanding of a particular focus area. To do this, students will need to develop capacity in finding and reading scientific literature, creating hypotheses, visualizing geospatial data, summarizing results, collaborating as a team, and creating a professional research poster. The development of these skills will serve as a primer for the internship research work students will conduct over the course of the rest of the summer.
 
 The individual classes of the course will therefore fall into one of three categories:
 
@@ -53,7 +53,7 @@ To sign-up for the PEP 2020 Class on Google Classroom, follow the instructions o
 
 We will be using Zoom for classes (and other PEP business) and Google Hangouts for team discussions.
 
-The Zoom meetings are scheduled and available in the Google Classroom Calendar. There is also a link to the meetings on Google Classroom.
+The Zoom meetings are scheduled and available in the PEP Calendar. There is also a link to the meetings on Google Classroom.
 
 We recommend you organize your Team discussion in Google Hangouts, which you can add directly to Slack, but you can also organize to talk via another means as you prefer.
 
@@ -61,7 +61,11 @@ We recommend you organize your Team discussion in Google Hangouts, which you can
 
 To facilitate direct communication with and between members of the 2020 PEP Cohort, we will be using Slack. This is a direct and group messaging application that will allow us to share news and upcoming events with the whole group as well as organize smaller discussions or contact individual students.
 
-You will also be asked to report back from your peer discussion in a Slack channel.
+You will also be asked to report back from your peer discussion in the peer_discussion Slack channel.
+
+### Google Drive
+
+You will have also received an email about a Google Drive folder that has been set up for you at SEA. Please feel free to use this to store any work related items that you need in one place or want to share with others. This is also a good place to also back-up your work - remember to back up your work to the cloud or an external hard drive!
 
 ## Resources
 
@@ -73,10 +77,10 @@ This is a good introductory text on the many aspects of ocean science and is all
 
 For R visualization work, the core text is:
 
-[R for Data Science](https://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham. This is a greta intro text to working with data in R. I recommend reading the whole thing over the course of the summer, but I'll be assigning specific chapters in class.
+[R for Data Science](https://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham. This is a great intro text to working with data in R. I recommend reading the whole thing over the course of the summer, but I'll be assigning specific chapters in class.
 
 We're compiling additional R resources on [this page](/r_resources) too.
 
-In addition to the R text and reources, we have a dedicated Slack channel for R questions (and a cohort of PEP alums to answer them) and Luis Valentin as a computational advisor who will have office hours available.
+In addition to the R text and resources, we have a dedicated Slack channel for R questions (and a cohort of PEP alums to answer them) and Luis Valentin as a computational adviser who will have office hours available.
 
 Other readings and resources for the class will be distributed as required. 

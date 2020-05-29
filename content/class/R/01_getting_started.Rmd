@@ -9,6 +9,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
 
 Our goal in learning R is to introduce you to some skills in exploring oceanographic data in R. This will mainly involve plotting tools, but will also include some discussion of working with data sets.
 
+NOTE: There is no exercise submission or Peer Discussion requirements for this work, but please reach out on the course Slack channel if you have any technical issues.
+
 # Why R?
 
 Perhaps the best place to start is to ask ourselves why we are choosing to use R. Fortunately, Rob Schlegel (WHOI) sums up nicely why using R is a good idea for data science as part of his R workshop. Please read [this](https://robwschlegel.github.io/Intro_R_Workshop/prelim.html#why-use-r).
