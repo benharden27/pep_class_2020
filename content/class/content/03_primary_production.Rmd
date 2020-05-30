@@ -1,11 +1,9 @@
 ---
 title: Phytoplankton and Nutrients
 date: 2020-06-03
-category:
-  - Oceanography
 output:
   blogdown::html_page:
-    number_sections: true
+    section_divs: no
 ---
 
 ```{r setup, include=FALSE}
@@ -36,7 +34,7 @@ library(tidyverse)
 
 Below are typical vertical profiles of light and nutrients in the ocean.
 
-!p[(/images/light_nutrients.jpg)
+![](/images/light_nutrients.jpg)
 
 * Q1: Describe the patterns that you see in each - why do they behave the way they do?
 

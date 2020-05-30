@@ -1,5 +1,8 @@
 ---
 title: R Resources
+output:
+  blogdown::html_page:
+    section_divs: no
 ---
 
 Learning any programming language can be both completely frustrating and hugely rewarding. Be kind to yourself and try to see past the struggles to the glorious highs that will come.

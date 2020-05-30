@@ -13,15 +13,6 @@
     
     
     <item>
-      <title>Data descovery and initial plotting</title>
-      <link>/class/r/02_plotting1/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/class/r/02_plotting1/</guid>
-      <description>Reading You should read Sections 3.1 to 3.6 (and skim the rest) of Chapter 3 of R for Data Science by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind ggplot and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</description>
-    </item>
-    
-    <item>
       <title>Measuring the ocean</title>
       <link>/class/skills/measuring_the_ocean/</link>
       <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
@@ -48,8 +39,17 @@ The following video came from a cruise in the North Atlantic in 2012.
       
       <guid>/class/content/02_chemical_oceanography/</guid>
       <description>Chemical Oceanography is concerned with the the study of the interaction of dissolved ions, molecules, gasses in the ocean. This is a diverse field and we will be covering the basics of macronutrients, oxygen and carbon in this class. This will be a necessarily broad overview.
-1 Reading Read the following from Segar:
+Reading Read the following from Segar:
  Chapter 5:  The Dissolving Power of Water (pg. 94-95) Sources and Sinks of Chemicals Dissolved in Seawater (pg.</description>
+    </item>
+    
+    <item>
+      <title>Data descovery and initial plotting</title>
+      <link>/class/r/02_plotting1/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/class/r/02_plotting1/</guid>
+      <description>Reading You should read Sections 3.1 to 3.6 (and skim the rest) of Chapter 3 of R for Data Science by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind ggplot and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/class/content/03_primary_production/</guid>
-      <description>1 Reading Watch this accessible intro to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen   2 Exercises Submit a Google Doc with your answers to these questions to Google Classroom.</description>
+      <description>Reading Watch this accessible intro to phytoplankton:   Read the following from Segar:   Chapter 12: only pg 285 - 296. Critical Concept 14, which covers light, nutrients and photosynthesis in the ocean.  Listen to this podcast about putting excess nitrogen into a local watershed:   SEA Semester · Fixing Nitrogen  Exercises Submit a Google Doc with your answers to these questions to Google Classroom.</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ The following video came from a cruise in the North Atlantic in 2012.
       
       <guid>/class/content/01_physical_oceanography/</guid>
       <description>Physical Oceanography is the study of how water moves. This includes ocean currents, waves and large scale ocean circulation. Some of the most fundamental ideas revolve around the key physical properties of the water: Temperature, Salinity and Density. We will explore these properties and how they allow or limit movement of water in the ocean.
-1 Reading Read the following from Segar:
+Reading Read the following from Segar:
  Chapter 1:  Introduction (pg. 1-2) The Oceans and Earth’s Environment (pg.</description>
     </item>
     

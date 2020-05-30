@@ -1,5 +1,8 @@
 ---
 title: Schedule
+output:
+  blogdown::html_page:
+    section_divs: no
 ---
 
 # Daily Routine

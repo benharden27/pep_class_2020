@@ -10,3 +10,14 @@
 nav a {
   color:#076873;
 }
+
+
+.container {
+   margin-left: 20%;
+}
+/* Media Queries */
+@media (max-width: 1080px) {
+  .container {
+    margin-left: auto;
+  }
+}

@@ -98,13 +98,10 @@
 				
 
 
-<div id="reading" class="section level1">
-<h1>Reading</h1>
+<h1 id="reading">Reading</h1>
 <p>You should read Sections 3.1 to 3.6 (and skim the rest) of <a href="https://r4ds.had.co.nz/data-visualisation.html">Chapter 3</a> of <a href="https://r4ds.had.co.nz/index.html">R for Data Science</a> by Garrett Grolemund and Hadley Wickham. This should introduced you to the basic ideas behind <a href="https://ggplot2.tidyverse.org/index.html">ggplot</a> and helped you create your first plots using their built-in data. ggplot is a powerful tool for producing elegant graphics and is relatively simple to use once you’ve mastered a few key ideas.</p>
 <p>You should also go through <a href="https://rstudio.cloud/learn/primers/1.1">this primer</a> on visualization in R, which includes interactive code chunks for you to try out.</p>
-</div>
-<div id="exercises" class="section level1">
-<h1>Exercises</h1>
+<h1 id="exercises">Exercises</h1>
 <p>We’re now going to take the ideas from the reading and apply them to an ocean data set, specifically, ocean profile data we saw in the <a href="/class/content/01_physical_oceanography/index.html">Physical Oceanography Class</a>. You can download this data <a href="/data/profiles.csv">here</a>.</p>
 <p>By the end of the exercise you should have:</p>
 <ol style="list-style-type: decimal">
@@ -112,8 +109,7 @@
 <li>experimented with a few different types</li>
 <li>advanced your thinking on how oceanographic data can be plotted</li>
 </ol>
-<div id="starting-off" class="section level2">
-<h2>Starting off</h2>
+<h2 id="starting-off">Starting off</h2>
 <p>I advise you to open a new R Script for this class (File -&gt; New File -&gt; R Script). You can store all the code you create in there and either run line by line (Ctrl/Cmd + Enter) or in bulk (using “play” button at top of script or by using a keyboard <a href="https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts">shortcut</a>). Don’t forget to comment on your code using <code>#</code> at the start of a line to make it clear what each piece of code does.</p>
 <p>ggplot is a package contained in the <a href="https://www.tidyverse.org/">tidyverse</a> set of packages. So to run the functions contained, we first need to load the library into our work environment. You should have already installed this by running</p>
 <pre class="r"><code>`install.packages(&quot;tidyverse&quot;)`</code></pre>
@@ -131,9 +127,7 @@
 <p>If you had any issues installing the complete <code>tidyverse</code>, we’ll also be able to do all the exercises contained here by just loading the following libraries:</p>
 <pre class="r"><code>library(ggplot2)
 library(readr)</code></pre>
-</div>
-<div id="reading-in-the-data" class="section level2">
-<h2>Reading in the data</h2>
+<h2 id="reading-in-the-data">Reading in the data</h2>
 <p>You need to download the <a href="/data/profile.csv">data</a> we are going to use and save it somewhere sensible on your computer (not your Desktop please).</p>
 <p>Once you have the data where you want it, open it up in a text editor (TextEdit, wordpad, etc.). The file is a Comma-Separated Values (csv) file, which is one of the most common data formats used for sharing data in a way that can be useful across platforms.</p>
 <p>As the name suggests, our data is organized into columns, each separated by a comma, line-by-line. The first row of our data (as in many data sets) are the names of each of the columns. If you loaded this data into Excel, it would automatically recognize this format and convert it into the standard visual layout with row and columns.</p>
@@ -142,9 +136,7 @@ library(readr)</code></pre>
 <p>You will need to replace the path I have given with the path on your computer. RStudio has a really handy way of helping you do this. Open up some quote marks in the parentheses of the function like this: <code>read_csv(&quot;&quot;)</code>, position your cursor between the quotes, and then press the ‘tab’ key. This will show you all the files and folders in you home folder. By selecting folders and then pressing tab again, you can navigate your way to the file that you saved.</p>
 <p><code>read_csv()</code> takes in a number of other parameter if you want to fine-tune how it reads your data (look at <code>?read_csv()</code> for more details), but for our data, just the file path will suffice. As you can see from the read-out, it has even guessed at the format of each of the columns based on the data contained in the file.</p>
 <p>Note: The tidyverse <code>read_csv()</code> can often get confused with the basic R reader <code>read.csv()</code>. That will cause you some issues if you use the wrong one.</p>
-</div>
-<div id="initial-look-at-the-data" class="section level2">
-<h2>Initial look at the data</h2>
+<h2 id="initial-look-at-the-data">Initial look at the data</h2>
 <p>The data has been imported into a <strong>data frame</strong> in R. Side note: Technically we’re working with a tidyverse “tibble”, but its built on the base R data frame, so let’s not get bogged down in details at this point. I’ll refer to them as data frames throughout.</p>
 <p>Data frames are the most common way of organizing data in R and the form that ggplot requires for making plots. It’s very similar to how Excel organizes data in rows and columns and, like Excel, there are a number of ways people choose to organize their data in this format. However, ggplot (and other tidyverse packages) focus on using “tidy” data: Each observation has a row and each variable is organized into a column.</p>
 <div class="figure"><span id="fig:unnamed-chunk-4"></span>
@@ -211,9 +203,7 @@ Figure 1: Visualization of how values are organized in a data frame (reproduced 
 <li>sigma: Potential Density (kgm<sup>-</sup>3)</li>
 </ul></li>
 </ul>
-</div>
-<div id="other-things-to-know-about-looking-at-data" class="section level2">
-<h2>Other things to know about looking at data</h2>
+<h2 id="other-things-to-know-about-looking-at-data">Other things to know about looking at data</h2>
 <p>As we begin to explore data and begin to visualize it, some of the following functions can be useful.</p>
 <p>To get the number of rows in a data frame you can use</p>
 <pre class="r"><code>nrow(df)</code></pre>
@@ -240,9 +230,7 @@ df[[7]]</code></pre>
 <p>Or we can access a single column data frame using <code>[...]</code>:</p>
 <pre class="r"><code>df[&quot;temp&quot;]
 df[5]</code></pre>
-</div>
-<div id="filtering-data" class="section level2">
-<h2>Filtering data</h2>
+<h2 id="filtering-data">Filtering data</h2>
 <p>Filtering data before you plot is one of the most fundamental things you can do. It’s akin to only selecting certain rows to plot from your Excel sheet. As we’ve already seen, the data is already “tidy” so we don’t have to do anything to organize it at this point, but we’re going to create a new data frame that is filtered to give us just one of the profiles. The tidyverse has a really simple way to help us do this using the <code>filter()</code> function.</p>
 <pre class="r"><code>df_profile &lt;- filter(df, Cruise == &quot;SR04_06AQANTIX_2&quot;)</code></pre>
 <p>The filter function takes in a data frame (<code>df</code> in out case) and then some criteria for which data to select. In our case, I’ve said that the <code>Cruise</code> column must be <code>SR04_06AQANTIX_2</code>.</p>
@@ -265,9 +253,7 @@ x == 3</code></pre>
 <pre><code>## [1] &quot;SR04_06AQANTIX_2&quot;   &quot;P17C_31WTTUNES_1&quot;   &quot;AR11_74AB73_1&quot;     
 ## [4] &quot;P15S_31DSCG96_1&quot;    &quot;F/V Ocean Explorer&quot;</code></pre>
 <p>You can use this list to substitute in to our filter code to select a different station.</p>
-</div>
-<div id="initial-plots" class="section level2">
-<h2>Initial Plots</h2>
+<h2 id="initial-plots">Initial Plots</h2>
 <p>Recall from what you’ve already seen that we create a simple ggplot by specifying three things:</p>
 <ol style="list-style-type: decimal">
 <li>The data</li>
@@ -318,9 +304,7 @@ ggplot() +
   geom_point() +
   scale_y_reverse()</code></pre>
 <p><img src="/class/R/02_plotting1_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
-</div>
-<div id="challenges" class="section level2">
-<h2>Challenges</h2>
+<h2 id="challenges">Challenges</h2>
 <p>OK, from here-on-in, I’m going to set you some challenges to grapple with. Complete answers to come at end of class don’t worry. Get through as much as you can.</p>
 <p>This is really just a forum for you to practice, experiment, break stuff and fix it. Feel free to diverge from my plan below as opportunities present themselves and you interest dictates. Plot different variables, explore the data set, have some fun.</p>
 <p><a href="https://classroom.google.com/u/4/c/ODEyOTAzMjY5MjJa/a/ODgzOTM0MzcyMDBa/details">Submit</a> an R script with your solutions to any of these challenges to Google Classroom.</p>
@@ -337,11 +321,306 @@ ggplot() +
 * Filter for one station and plot a scatter plot of salinity on the x axis and temperature on the y axis
 * Use all the profiles and make the same scatter plot which shows each station as a different color.
 * Can you zoom in to just 0-1000m?</p>
-</div>
-</div>
 
 			</div>
+		
+    <style>
+   
 
+  .toc {
+    position: fixed;
+    top: 40%;
+    left: 1%;
+    width: 15%;
+    transform: translateY(-50%);
+     
+     
+    border-radius: 5px;
+    padding-bottom: 1rem;
+  }
+
+  .nav ul li a:hover {
+    text-decoration: underline;
+    color: #B10DC9;
+  }
+
+  .toc .page-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .toc-nav ul {
+     
+     
+    white-space: nowrap; 
+    line-height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+   
+  .toc-nav ul ul ul {
+    margin-left: 2rem;
+  }
+
+  .toc-nav .nav-link {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+     
+    color: #333;
+  }
+  
+  .toc a {
+    text-overflow: ellipsis;
+  }
+
+
+
+   
+  @media (max-width: 1080px) {
+    main {
+      max-width: 100%;
+    }
+
+    .toc {
+      display: none;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="toc">
+  
+
+  <a class="page-header" href="#"><strong>- GO TO TOP -</strong></a>
+  <hr>
+  <div id="page-scrollspy" class="toc-nav">
+
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#reading">
+          Reading
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#exercises">
+          Exercises
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#starting-off">
+          Starting off
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#reading-in-the-data">
+          Reading in the data
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#initial-look-at-the-data">
+          Initial look at the data
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#other-things-to-know-about-looking-at-data">
+          Other things to know about looking at data
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#filtering-data">
+          Filtering data
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#initial-plots">
+          Initial Plots
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#challenges">
+          Challenges
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    </ul>
+    
+    
+    
+    
+
+  </div>
+
+</div>
+
+
+    
 			<div class="tags">
 				
 					
@@ -349,6 +628,7 @@ ggplot() +
 			</div>
 
 		</div>
+
 	</div>
 	<div class="footer wrapper">
 	<nav class="nav">

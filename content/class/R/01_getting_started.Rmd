@@ -1,6 +1,9 @@
 ---
 title: "Getting Started in R"
 date: 2020-06-01
+output:
+  blogdown::html_page:
+    section_divs: no
 ---
 
 ```{r setup, include=FALSE}
