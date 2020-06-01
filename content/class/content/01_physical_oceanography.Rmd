@@ -82,7 +82,7 @@ group_by(df, Cruise) %>%
   ggplot(aes(ifelse(lon<0,lon+360,lon), lat)) +
   geom_polygon(aes(long, lat, group = group), data = map_data("world2"), fill = "grey50") +
   geom_point() +
-  geom_label(aes(label = 1:5), nudge_x = 10) +
+  geom_label(aes(label = c(2,4,5,1,3)), nudge_x = 10) +
   coord_quickmap(xlim = xrange, ylim = yrange, expand = FALSE) +
   scale_x_continuous(breaks = xbr, labels = xlabs) +
   scale_y_continuous(breaks = ybr, labels = ylabs) +
@@ -118,3 +118,11 @@ In this part of the ocean - as we move from the summer to the winter, the winds 
 * Q4: How does this information help explain the trend in mixed layer depth and temperature you described?
 
 * Q5: Why is there very little change between seasons in the temperature below 120 m?
+
+# Peer Discussion
+
+Find your Peer Discussion partner on the spreadsheet on Google Classroom and arrange to meet for 30 min sometime between 12-1pm EDT (9-10am PDT). You should:
+
+- Discuss and thing that either of you found confusing in the reading
+- Discuss your answers to the questions posed in the exercise section
+- Come up with some questions and comments to post to the peer_discussion slack channel at the end of your meeting.
