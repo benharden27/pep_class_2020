@@ -27,6 +27,10 @@ Read the following from [Segar](https://www.reefimages.com/oceansci.php):
     + Water and Heat Budgets (pg. 147-149)
     + Climate and Ocean Surface Water Properties (pg. 154-157). These sections covers the input and removal of heat and water from the ocean.
 
+Check out this video about the impact of salinity on density and how that creates stratification.
+
+<iframe src="https://player.vimeo.com/video/424923752" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 # Exercises
 
 Remember, these questions are meant to help you puzzle out some patterns. We will discuss everything in peer groups and in class. Please note your responses in the exercise assignment (ungraded).
