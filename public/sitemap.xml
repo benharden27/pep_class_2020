@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/class_old/</loc>
+    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/class/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -14,37 +20,72 @@
   </url>
   
   <url>
-    <loc>/class/skills/measuring_the_ocean/</loc>
+    <loc>/class/rs_measuring_the_ocean/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/content/04_zooplankton/</loc>
+    <loc>/class_old/skills/measuring_the_ocean/</loc>
     <lastmod>2020-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/content/02_chemical_oceanography/</loc>
+    <loc>/class/os_zooplankton/</loc>
+    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class_old/content/04_zooplankton/</loc>
+    <lastmod>2020-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class/os_chemical_oceanography/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/r/02_plotting1/</loc>
+    <loc>/class_old/content/02_chemical_oceanography/</loc>
+    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class/r_plotting1/</loc>
     <lastmod>2020-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/content/03_primary_production/</loc>
+    <loc>/class_old/r/02_plotting1/</loc>
+    <lastmod>2020-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class/os_primary_production/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/content/01_physical_oceanography/</loc>
+    <loc>/class_old/content/03_primary_production/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class/os_physical_oceanography/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/class/r/01_getting_started/</loc>
+    <loc>/class_old/content/01_physical_oceanography/</loc>
+    <lastmod>2020-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class/r_getting_started/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/class_old/r/01_getting_started/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
